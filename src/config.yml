@@ -1,0 +1,19 @@
+#This is the configuration file for ProtectionCore
+version: 8
+forcelangcopy: +
+#Adding op permissions and disabling disableflagcheck permissions can improve the plugins performance
+permissions:
+  op: +
+  disableflagcheck: +
+creatorblock:
+  silktouch: +
+#Here you can write all the region limit checks. -1 means unlimited.
+#You can set this limit to each player using permission protectioncore.limit.<number>
+regionlimits: 10 5 3 2 1
+#Number of ticks per move checks, 1 tick=1/20 second, so the default setting 10 means half a second.
+#Higher values=better performance, Lower values=faster region change and player move detection
+movecheckrate: 10
+#Setting ids of wand and info tools, tool format: <id>[:<subid>]
+tools:
+  wand: 271:0
+  info: 268

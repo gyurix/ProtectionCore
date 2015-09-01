@@ -1,0 +1,421 @@
+en
+#commands
+protectioncore.help:ProtectionCore management maincommand.
+protectioncore.command.default:rg region
+protectioncore.command.define:+ define create
+protectioncore.command.area:a ar area
+protectioncore.command.area.expand:+ extend expand
+protectioncore.command.area.groundair:y gra groundair
+protectioncore.command.area.decrease:- dec decrease
+protectioncore.command.area.redefine:* rd redefine
+protectioncore.command.area.move:m mv move
+protectioncore.command.remove:- delete remove
+protectioncore.command.info:i ? info
+protectioncore.command.list:l list
+protectioncore.command.flag:f flag
+protectioncore.command.gettool:gettool gt tool
+protectioncore.command.removeflag:f- flag- rflag removeflag
+protectioncore.command.save:s save
+protectioncore.command.sel1:pos1 p1 sel1
+protectioncore.command.sel2:pos2 p2 sel2
+protectioncore.command.reload:r reload
+protectioncore.command.priority:p priority
+protectioncore.command.player:player p
+protectioncore.command.group:group g
+protectioncore.command.unknown:§cCommands: §f/rg define|area <expand|groundair|decrease|redefine|move>|remove|info|list|flag|removeflag|player|group|priority|save|reload
+#noperm
+protectioncore.noperm:§cSorry, but you don't have permission for using protectioncore!
+protectioncore.noperm.area:§cYou don't have permission for editing regions areas.
+protectioncore.noperm.define:§cYou don't have permission for defining new regions.
+protectioncore.noperm.gettool:§cYou don't have permission for getting region managment tools!
+protectioncore.noperm.group:§cYou don't have permission for managing groups on this region!
+protectioncore.noperm.info:§cYou don't have permission for getting informations about regions!
+protectioncore.noperm.flag:§cYou don't have permission for managing flags!
+protectioncore.noperm.list:§cYou don't have permission for getting the region list!
+protectioncore.noperm.player:§cYou don't have permission for managing players on this region!
+protectioncore.noperm.priority:§cYou don't have permission for modifying the region priorities!
+protectioncore.noperm.reload:§cYou don't have permission for reloading the regions!
+protectioncore.noperm.remove:§cYou don't have permission for deleting regions!
+protectioncore.noperm.flagremove:§cYou don't have permission for deleting flags!
+protectioncore.noperm.template.any:§cYou don't have permission for using any template!
+protectioncore.noperm.template.given:§cYou don't have permission for using the given template!
+protectioncore.noperm.save:§cYou don't have permission for saving the regions!
+protectioncore.noperm.select:§cYou don't have permission for selecting areas!
+#gettool
+protectioncore.gettool.success:§fYou got the §b<type>§f tool in your hand.
+protectioncore.tooltype.info:info
+protectioncore.tooltype.wand:wand
+#region
+protectioncore.region.exists:§e<region>§c region already exists.
+protectioncore.region.notexists:§e<region>§c region isn't exists.
+protectioncore.region.noargument:§cYou need to specify the region!
+protectioncore.region.nodimension:§cYou need to specify the dimension, because you executed this command from console!
+protectioncore.region.notnumber:§cError, the given dimensionnumber (§e<dimension>§c) isn't a valid number.
+#selection
+protectioncore.selection.first:§bFirst point selected (§f<x>,<y>,<z>§b).
+protectioncore.selection.second:§bSecond point selected (§f<x>,<y>,<z>§b).
+protectioncore.selection.nofirst:§cYou didn't selected the first point!
+protectioncore.selection.nosecond:§cYou didn't selected the second point!
+protectioncore.selection.noboth:§cYou didn't selected the area!
+#define command
+protectioncore.define.created:§b<region>§f region successfully created.
+protectioncore.define.invalidtemplate:§cError, the given template (§e<template>§c) doesn't exists.
+protectioncore.define.reached:§cYou reached the maximum amount of regions (§e<num>§c), that you can have!
+#area command
+protectioncore.area.info:§b<region>§e regions area: [§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e]
+protectioncore.area.expanded:§b<region>§f region was expanded to <direction> direction with <block> blocks.
+protectioncore.area.grair:§b<region>§f regions area is expanded now from ground(y=0) to air(y=256).
+protectioncore.area.decreased:§b<region>§f region was decreased from <direction> direction by <block> blocks.
+protectioncore.area.invalid:§e<region>§c can't be decreased with so many blocks from §e<direction> §cdirection.
+protectioncore.area.moved:§b<region>§f region was succesfully moved by <block> blocks to <direction> direction.
+protectioncore.area.redefined:§b<region>§f regions area successfully redefined to area §b[<minx>;<miny>;<minz> - <maxx>;<maxy>;<maxz>]§f.
+protectioncore.area.directions:south down up north undefined west east
+protectioncore.area.bigger:§cThe area (§e<x> x <y> x <z>§c) is bigger then the allowed for you (§e<maxx> x <maxy> x <maxz>§c)!
+protectioncore.area.smaller:§cThe area (§e<x> x <y> x <z>§c) is smaller then the allowed for you (§e<minx> x <miny> x <minz>§c)!
+protectioncore.area.contains:§cThe area shouldn't contain another regions area which same priority.
+protectioncore.area.cantedit:§cYou can't edit the given regions (§e<region>§c) area, because it has been created with a creation block.
+#remove command
+protectioncore.remove.removed:§b<region>§f region successfully removed.
+protectioncore.remove.noglobal:§cThe global region isn't deletable!
+#info
+protectioncore.info.list:§eYou are staying in these regions (ordered descending by priority):\n <regions>
+protectioncore.info.list.format:§c{<priority>}§b<name>(<creator>)§e[§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e]
+protectioncore.info.list.separator:\n
+protectioncore.info.region:§c{<priority>}§b<name>§e[§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e] §fregion:\n§bCreator:§f <creator>\n§bCreationBlock:§f <block> \n<groups>
+protectioncore.info.creationblock:§a§l✓ §e[<x>;<y>;<z>]
+protectioncore.info.nocreationblock:§4§lx
+protectioncore.info.group:§b§l<name>§f: §f<players>
+protectioncore.info.group.separator:\n
+#list
+protectioncore.list:§eRegions in your dimension: §f<regions>
+protectioncore.list.dimension:§eRegions in §b<dimension>.§e dimension: §f<regions>
+protectioncore.list.separator:, 
+#flag command
+protectioncore.flag.list.global:§c{<priority>}§b<name>§e[§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e] §fregions flags:\n<groups>
+protectioncore.flag.list.global.group:§b§l<name>§f: §f<coloredflag>
+protectioncore.flag.list.global.separator:\n
+protectioncore.flag.list.groups:§c{<priority>}§b<name>§f regions <group> groups flags:\n<flaglist>
+protectioncore.flag.list.groups.format:§b<coloredflag>: §f<value>
+protectioncore.flag.list.groups.separator:\n
+protectioncore.flag.modified:§b<flag>§f flag was successfully modified to "§b<value>§f" for region §b<region>§f.
+protectioncore.flag.created:§b<flag>§f flag was successfully created with value "§b<value>§f" for region §b<region>§f.
+protectioncore.flag.nopermmodify:§cYou don't have permission for changing this flag!
+protectioncore.flag.nopermcreate:§cYou don't have permission for creating this flag!
+protectioncore.flag.flagnotfound:§cThe given flag (§e<flag>§c) isn't exists!
+#flagremove command
+protectioncore.flagremove.removed:Removed §b<flag>§f flag from region §b<region>§f.
+protectioncore.flagremove.badflag:§cThe given region(§e<region>§c) isn't contains the given flag (§e<flag>§c)
+protectioncore.flagremove.noglobal:§cThe global regions flags aren't deletable!
+#group command
+protectioncore.group.create:§b<group>§f group is created for region §b<region>§f.
+protectioncore.group.create.badcopygroup:§b<group>§f group is created for region §b<region>§f, §cwithout group flag copy, because the given copyable group (§b<copygroup>§c) doesn't exists.
+protectioncore.group.create.copygroup:§b<group>§f group with §b<copygroup>§f groups flags is created for region §b<region>§f.
+protectioncore.group.remove:§b<group>§f group is removed from region §b<region>§f.
+protectioncore.group.default:§b<group>§f group is default, so it can't be deleted from region §b<region>§f.
+protectioncore.group.notfound:The given group, §b<group>§f not found.
+#player command
+protectioncore.player.add:§b<player>§f player added for §b<region>§f regions §b<group>§f group.
+protectioncore.player.strange:§cThe strange groups can't contain players!
+protectioncore.player.remove:§b<player>§f player removed from §b<region>§f regions §b<group>§f group.
+#priority command
+protectioncore.priority.set:The given region(§b<region>§f)s priority changed to §b<priority>§f.
+protectioncore.priority.notnumber:§cError the given priority (§e<priority>§c) isn't a number.
+#save command
+protectioncore.save.error:§cError while saving, please check the console!
+protectioncore.save.saved:§aRegions are saved successfully.
+#reload command
+protectioncore.reload.error:§cError while reloading regions, please check the console!
+protectioncore.reload.reloaded:§aRegions are reloaded successfully.
+#warnings
+protectioncore.warning.nopvp:§4The PVP is disabled for you here!
+protectioncore.warning.blockbreak:§4Breaking this block isn't allowed to you!
+protectioncore.warning.blockplace:§4Placing this block isn't allowed to you!
+protectioncore.warning.bookchange:§4Changing books here isn't allowed to you!
+protectioncore.warning.blockinterract:§4Interracting with this block isn't allowed to you!
+protectioncore.warning.itemdrops:§4Dropping this item to there isn't allowed to you!
+protectioncore.warning.itemuse:§4Using this item isn't allowed to you!
+protectioncore.warning.itempickup:§4Picking up this item from there isn't allowed to you!
+protectioncore.warning.exppickup:§4Picking up exp from there isn't allowed to you!
+protectioncore.warning.chatsend:§4Chat sending from here isn't allowed to you!
+protectioncore.warning.attackentity:§4Attacking this entity isn't allowed to you!
+protectioncore.warning.spectateentity:§4Spectating from this entity isn't allowed to you!
+protectioncore.warning.getpotioneffects:§4Getting potion effects isn't allowed to you!
+protectioncore.warning.interractentity:§4Interracting with this entity isn't allowed to you!
+protectioncore.warning.croptrample:§4Trampling this crop isn't allowed to you!
+protectioncore.warning.editflags:§4Editing this flag isn't allowed to you!
+protectioncore.warning.entry:§4Entering this area isn't allowed to you!
+protectioncore.warning.leave:§4Leaving this area isn't allowed to you!
+protectioncore.warning.move:§4Moving isn't allowed to you!
+protectioncore.warning.teleport:§4Teleporting isn't allowed to you!
+protectioncore.warning.dimensionchange:§4Going to this dimension from here isn't allowed to you!
+protectioncore.warning.signchange:§4Changing this sign isn't allowed to you!
+de
+#commands
+protectioncore.help:ProtectionCore Verwaltung Hauptbefehl.
+protectioncore.command.default:rg region
+protectioncore.command.define:+ define create
+protectioncore.command.area:a ar area
+protectioncore.command.area.expand:+ extend expand
+protectioncore.command.area.groundair:y gra groundair
+protectioncore.command.area.decrease:- dec decrease
+protectioncore.command.area.redefine:* rd redefine
+protectioncore.command.area.move:m mv move
+protectioncore.command.remove:- delete remove
+protectioncore.command.info:i ? info
+protectioncore.command.list:l list
+protectioncore.command.flag:f flag
+protectioncore.command.gettool:gettool gt tool
+protectioncore.command.gettool.info:info inf i
+protectioncore.command.gettool.wand:wand wnd w
+protectioncore.command.removeflag:f- flag- rflag removeflag
+protectioncore.command.save:s save
+protectioncore.command.reload:r reload
+protectioncore.command.priority:p priority
+protectioncore.command.player:player p
+protectioncore.command.group:group g
+protectioncore.command.unknown: §cCommands: §f/rg define|area <expand|groundair|decrease|redefine|move>|remove|info|list|flag|removeflag|player|group|priority|save|reload
+#noperm
+protectioncore.noperm:§cDu hast keine Berechtigung ProtectionCore zu benutzen.
+protectioncore.noperm.area:§cDu hast keine Berechtigung andere Bereiche zu editieren.
+protectioncore.noperm.define:§cDu hast keine Berechtigung neue Regionen zu definieren.
+protectioncore.noperm.gettool:§cDu hast keine Berechtigung Werkzeuge zum Verwalten der Region zu bekommen.
+protectioncore.noperm.group:§cDu hast keine Berechtigung Gruppen in dieser Region zu verwalten.
+protectioncore.noperm.info:§cDu hast keine Berechtigung Informationen ueber Regionen zu erhalten.
+protectioncore.noperm.flag:§cDu hast keine Berechtigung Flags zu verwalten.
+protectioncore.noperm.list:§cDu hast keine Berechtigung die Regionsliste einzusehen.
+protectioncore.noperm.player:§cDu hast keine Berechtigung in dieser Region Spieler zu verwalten.
+protectioncore.noperm.priority:§cDu hast keine Berechtigung die Regionsprioritaeten in dieser Region zu verwalten.
+protectioncore.noperm.reload:§cDu hast keine Berechtigung Regionen neuzuladen.
+protectioncore.noperm.remove:§cDu hast keine Berechtigung Regionen zu loeschen.
+protectioncore.noperm.flagremove:§cDu hast keine Berechtigung Flags zu loeschen.
+protectioncore.noperm.template.any:§cDu hast keine Berechtigung Templates zu benutzen.
+protectioncore.noperm.template.given:§cDu hast keine Berechtigung den angegebenen Template zu benutzen.
+protectioncore.noperm.save:§cDu hast keine Berechtigung die Region zu sichern.
+protectioncore.noperm.select:§cDu hast keine Berechtigung Bereiche auszuwaehlen.
+#gettool
+protectioncore.gettool.success:§fDu hast das §c<type>§f-wergzeug erhalten.
+protectioncore.tooltype.info: info
+protectioncore.tooltype.wand: wand
+#region
+protectioncore.region.exists:§cDie Region §e<region> §cexistiert bereits.
+protectioncore.region.notexists:§cDie Region §e<region> §cexistiert nicht
+protectioncore.region.noargument:§cDu musst diese Region spezifizieren.
+protectioncore.region.nodimension:§cDu musst die Deimension angeben da du den Befehl von der Konsole ausfuehrst
+protectioncore.region.notnumber:§cFehler: Die angegebene Dimensionszahl (§e<dimension>§c) ist keine gueltige Zahl.
+#selection
+protectioncore.selection.first:§berster Punkt gesetzt bei (§f<x>,<y>,<z>§b).
+protectioncore.selection.second:§bzweiter Punkt gesetzt bei (§f<x>,<y>,<z>§b).
+protectioncore.selection.nofirst:§cDu hast den ersten Punkt nicht gesetzt
+protectioncore.selection.nosecond:§cDu hast den zweiten Punkt nicht gesetzt
+protectioncore.selection.noboth:§cDu hast noch keine Region gewaehlt.
+#define command
+protectioncore.define.created:§fDie Region §b<region> §fwurde erstellt.
+protectioncore.define.invalidtemplate:§cFehler: Der Template (§e<template>§c) existiert nicht.
+protectioncore.define.reached:§cDu hast die maximale Anzahl an Regionen erreicht. Du kannst maximal §e<num> §cRegionen haben!
+#area command
+protectioncore.area.info:§b<region> §eBereich: [§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e]
+protectioncore.area.expanded:§fDie Region §b<region> §fwurde wurde in Richtung <direction> , um <block> Bloecke erweitert.
+protectioncore.area.grair:§fDie Region §b<region> §fwurde in der Hoehe auf (y=0) - (y=256) erweitert.
+protectioncore.area.decreased:§fDie Region §b<region> §fwurde wurde in Richtung <direction>, um <block> Bloecke reduziert.
+protectioncore.area.invalid:§cDie Region §e<region> §ckann nicht um soviele Blocke in Richtung §e<direction> §creduziert werden.
+protectioncore.area.moved:protectioncore.area.moved:§fDie Region §b<region> §fwurde in Richtung <direction> um <block> Bloecke verschoben.
+protectioncore.area.redefined:§fDer Regionsbereich der Region §b<region> §fwurde neu definiert. Der neue Breich geht von §b[<minx>;<miny>;<minz> - <maxx>;<maxy>;<maxz>]§f.
+protectioncore.area.directions:Suedden Unten Oben Norden Undefinieirt Westen Osten
+protectioncore.area.bigger:§cDer gewaehlte Bereich (§e<x> x <y> x <z>§c) ist groesser als es dir erlaubt ist. Die maximale erlaubte Regionsgroesse ist: (§b<maxx> x <maxy> x <maxz>§c).
+protectioncore.area.smaller:§cDer gewaehlte Bereich (§b<x> x <y> x <z>§c) ist kleiner als es dir erlaubt ist. Die minimale erlaubte Regionsgroesse ist: (§b<mixx> x <mixy> x <mixz>§c).
+protectioncore.area.contains:§cDieser Bereicht sollte keine Bereiche gleicher Prioritaet enthalten.
+protectioncore.area.cantedit:§cDu kannst den Bereich der Region (§e<region>§c) nicht editieren, da sie mit einem Erstellungsblock erstellt wurde.
+#remove command
+protectioncore.remove.removed:§fDie Region §b<region> §fwurde erfolgreich geloescht.
+protectioncore.remove.noglobal:§cDie globale Region kann nicht gefunden werden.
+#info
+protectioncore.info.list:§eDu stehst in folgenen Regionen (geordnet nach ihren Prioritaeten):\n
+protectioncore.info.list.format:§c{<priority>},§b<name>(<creator>)§e[§f<minx>§e,§f<miny>§e,§f<minz>e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e]
+protectioncore.info.list.separator:\n
+protectioncore.info.region:§b§l{§c<priority>)§b<name>§e[§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e] §fRegion:\n§c<groups>
+protectioncore.info.creationblock:§a§l✓ §e[<x>;<y>;<z>]
+protectioncore.info.nocreationblock:§4§lx
+protectioncore.info.group:§c§l<name>§f: §f<players>
+protectioncore.info.group.separator:\n
+#list
+protectioncore.list:§eRegionen in dieser Dimension: §f<regions>
+protectioncore.list.dimension:§eRegionen in der Dimension §b<dimension>§e: §f<regions>
+protectioncore.list.separator:,
+#flag command
+protectioncore.flag.list.global:§c{<priority>}§b<name>§e[§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e] Regionenflags:\n<groups>
+protectioncore.flag.list.global.group:§b§l<name>§f: §f<coloredflag>
+protectioncore.flag.list.global.separator:\n
+protectioncore.flag.list.groups:§c{<priority>}§b<name> §fRegionen <group> §fGruppenflags:\n<flaglist>
+protectioncore.flag.list.groups.format:§b<coloredflag>§f: §f<value>
+protectioncore.flag.list.groups.separator:\n
+protectioncore.flag.modified:§fDie Flag §b<flag> §fwurde fuer die Region §b<region> §fauf §b<value> §fgesetzt.
+protectioncore.flag.created:§fDie Flag §b<flag> §fwurde fuer die Region §b<region> mit dem Wert §b<value> §fgesetzt.
+protectioncore.flag.nopermmodify:§cDu hast nicht die Berechtigung diese Flag in dieser Region zu aendern.
+protectioncore.flag.nopermcreate:cfDu hast nicht die Berechtigung neue Flags in dieser Region zu erschafen
+protectioncore.flag.flagnotfound:§cDie angegebene Flag §c<flag> §fexistiert nicht.
+#flagremove command
+protectioncore.flagremove.removed:§fDie Flag §b<flag> §fwurde aus der Region §b<region> §fenfernt.
+protectioncore.flagremove.badflag:§fDie Flag §b<flag> §fexisitiert nicht in der Region §b<region>§f.
+protectioncore.flagremove.noglobal:§cDie globalen Flags koennen nicht entfernt werden.
+#group command
+protectioncore.group.create:§fDie Gruppe §b<group> §fwurde in der Region §b<region> §ferstellt.
+protectioncore.group.create.badcopygroup:§fDie FGruppe §b<group> §fgroup wurde in der Region §b<region> §ohne die GroupenFlags COPY ferstellt, da die angegebene Gruppe zum Kopieren (§b<copygroup> §f)nicht existiert.
+protectioncore.group.create.copygroup:§f Die Gruppe §b<group>§f wurde mit den GruppenFlags §b<copygroup> §ffuer die Region §b<region> erstellt.
+protectioncore.group.remove:§fDie Gruppe §b<group> §fwurde von der Region §b<region> §entfernt.
+protectioncore.group.default:§fDie Gruppe §b<group> §fist die Standartgruppe der Region §b<region> §fund kann daher nicht entfernt werden.
+protectioncore.group.notfound:§fDie Gruppe §b<group> §fkonnte nicht gefunden werden.
+#player command
+protectioncore.player.add:§fDer Spieler §b<player> §fwurde der Gruppe §b<group> §fin der Region §b<region> §fhinzuefuegt.
+protectioncore.player.strange:§cDie Gruppe strange kann keine Mitglieder enthalten.
+protectioncore.player.remove:§fDer Spieler §b<player> §fwurde aus der Gruppe §b<group> §fder Region §b<region> §fentfernt.
+#priority command
+protectioncore.priority.set:§fDie Prioritaet der Region §b<region> §fwurde auf §b<priority> §fgewechselt.
+protectioncore.priority.notnumber:§cFehler: Die anggegebene Prioritaet (§e<priority>§c) ist keine Zahl.
+#save command
+protectioncore.save.error:§cEin Fehler ist waehrend des Speicherns aufgetretten. Bitte schaue in deiner Konsole nach.
+protectioncore.save.saved:§aDie Regionen wurden gesichert.
+#reload command
+protectioncore.reload.error:§cEin Fehler ist waehrend des Neuladens der Regionen aufgetretten. Bitte schaue in deiner Konsole nach.
+protectioncore.reload.reloaded:§aDie Einstellungen und Regionen wurden neugeladen.
+#warnings
+protectioncore.warning.nopvp:§4PVP ist in dieser Region deaktiert.
+protectioncore.warning.blockbreak:§4Es ist dir nicht erlaubt Bloecke in dieser Region zu zerstoeren.
+protectioncore.warning.blockplace:§4 Es ist dir nicht erlaubt Bloecke in dieser Region zu plazieren.
+protectioncore.warning.bookchange:§4Es ist dir nicht erlaubt Buecher in dieser Region zu veraendern.
+protectioncore.warning.blockinterract:§4Es ist dir nicht erlaubt Bloecke in dieser Region zu plazieren.
+protectioncore.warning.itemdrops:§4Es ist dir nicht erlaubt Gegenstaende in dieser Region fallen zu lassen.
+protectioncore.warning.itemuse:§4Es ist dir nicht erlaubt diesen Gegenstand in dieser Region zu benutzen.
+protectioncore.warning.itempickup:§4Es ist dir nicht erlaubt diesen Gegenstand in dieser Region aufzuheben.
+protectioncore.warning.exppickup:§4Es ist dir nicht erlaubt Ehrfahrungspunkte in dieser Regeion zu sammeln
+protectioncore.warning.chatsend:§4Es ist dir nicht erlaubt in dieser Region zu chatten.
+protectioncore.warning.attackentity:§4Es ist dir nicht erlaubt Gegner is dieser Region anzugreifen.
+protectioncore.warning.spectateentity:§4Es ist dir nicht erlaubt dieses Obebjekt in dieser Reion zu betrachten.
+protectioncore.warning.getpotioneffects:§4Es ist dir nicht erlaubt Trankeffekte in dieser Regeion zu nutzen oder zu bekommen.
+protectioncore.warning.interractentity:§4Es ist dir nicht erlaubt mit Gegnern in dieser Region zu interagieren.
+protectioncore.warning.croptrample:§4Es ist dier nicht erlaubt Felder in dieser Region zu zertrampeln.
+protectioncore.warning.editflags:§4Es ist dir nicht erlaubt Flags in dieser Regeion zu editieren.
+protectioncore.warning.entry:§4Es ist dir nicht erlaubt diese Region zu betreten.
+protectioncore.warning.leave:§4Es ist dir nicht erlaubt diese Region zu verlassen.
+protectioncore.warning.move:§4Es ist dir nicht erlaubt dich in dieser Region zu bewegen.
+protectioncore.warning.teleport:§4Es ist dir nicht erlaubt in dieser Region zu teleportieren.
+protectioncore.warning.dimensionchange:§4Es ist dir nicht erlaubt Portale in dieser Region zu benutzen.
+protectioncore.warning.signchange:§4Es ist dir nicht erlaubt Schilder in dieser Region zu aendern.
+ru
+protectioncore.area.bigger:§cПлощадь (§e<x> x <y> x <z>§c) больше, чем разрешено для вас (§e<maxx> x <maxy> x <maxz>§c)!
+protectioncore.area.contains:§cРегион не должен содержать в себе другие регионы.
+protectioncore.area.decreased:§b<region>§f регион был уменьшен в направлении <direction> на <block> блоков.
+protectioncore.area.directions:up down east west north south
+protectioncore.area.expanded:§b<region>§f регион расширен в направлении <direction> на <block> блоков.
+protectioncore.area.grair:§b<region>§f регион расширен от земли (y=0) до неба (y=256).
+protectioncore.area.info:§b<region>§e область релиона: [§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e]
+protectioncore.area.invalid:§e<region>§c не может быть уменьшен на такое количество блоков в направлении §e<direction>.
+protectioncore.area.moved:§b<region>§f регион был успешно перемещен.
+protectioncore.area.moved:§b<region>§f регион был успешно перемещен.
+protectioncore.area.redefined:§b<region>§f регион был успешно изменен §b[<minx>;<miny>;<minz> - <maxx>;<maxy>;<maxz>]§f.
+protectioncore.area.smaller:§cПлощать региона (§e<x> x <y> x <z>§c) меньше, чем разрешено для вас (§e<minx> x <miny> x <minz>§c)!
+protectioncore.command.area:a ar area
+protectioncore.command.area.decrease:- dec decrease
+protectioncore.command.area.expand:+ extend expand
+protectioncore.command.area.groundair:y gra groundair
+protectioncore.command.area.move:m mv move
+protectioncore.command.area.redefine:* rd redefine
+protectioncore.command.default:rg region
+protectioncore.command.define:+ define create
+protectioncore.command.flag:f flag
+protectioncore.command.gettool:gettool gt tool
+protectioncore.command.group:group g
+protectioncore.command.info:i ? info
+protectioncore.command.list:l list
+protectioncore.command.player:player p
+protectioncore.command.priority:p priority
+protectioncore.command.reload:r reload
+protectioncore.command.remove:- delete remove
+protectioncore.command.removeflag:f- flag- rflag removeflag
+protectioncore.command.save:s save
+protectioncore.command.sel1:pos1 p1 sel1
+protectioncore.command.sel2:pos2 p2 sel2
+protectioncore.command.unknown: §cКоманды: §f/rg define|area <expand|groundair|decrease|redefine|move>|remove|info|list|flag|removeflag|player|group|priority|save|reload
+protectioncore.define.created:§b<region>§f регион успешно создан.
+protectioncore.define.reached:§cВы достигли лимита регионов: (§e<num>§c), которой разрешен для вас!
+protectioncore.flag.created:§b<flag>§f флаг успешно создан со значением "§b<value>§f" для региона §b<region>§f.
+protectioncore.flag.flagnotfound:§cФлаг (§e<flag>§c) не существует!
+protectioncore.flag.list.global:§c{<priority>}§b<name>§e[§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e] §fregions flags:\n<groups>
+protectioncore.flag.list.global.group:§b§l<name>§f: §f<coloredflag>
+protectioncore.flag.list.global.separator:\n
+protectioncore.flag.list.groups:§c{<priority>}§b<name>§f regions <group> groups flags:\n<flaglist>
+protectioncore.flag.list.groups.format:§b<coloredflag>: §f<value>
+protectioncore.flag.list.groups.separator:\n
+protectioncore.flag.modified:§b<flag>§f значение флага было успешно изменено на "§b<value>§f" для региона §b<region>§f.
+protectioncore.flag.nopermcreate:§cУ вас нет прав на установку этого флага!
+protectioncore.flag.nopermmodify:§cУ вас нет прав на изменение этого флага!!
+protectioncore.flagremove.badflag:§cРегион (§e<region>§c) не содержит флаг (§e<flag>§c)
+protectioncore.flagremove.noglobal:§cФлаги глобального региона не настраиваются!
+protectioncore.flagremove.removed:Удален флаг §b<flag>§f для региона §b<region>§f.
+protectioncore.gettool.success:§fВы получили инструмент §b<type>§f.
+protectioncore.group.create:§b<group>§f группа создана для региона §b<region>§f.
+protectioncore.group.default:§b<group>§f группа по умолчанию не может быть удалена для региона §b<region>§f.
+protectioncore.group.notfound:Группа §b<group>§f не найдена.
+protectioncore.group.remove:§b<group>§f группа удалена для региона §b<region>§f.
+protectioncore.info.group:§b§l<name>§f: §f<players>
+protectioncore.info.group.separator:\n
+protectioncore.info.list:§eВы прописаны в этих регионах (упорядочено по убыванию приоритета):\n <regions>
+protectioncore.info.list.format:§c{<priority>}§b<name>(<creator>)§e[§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e]
+protectioncore.info.list.separator:\n
+protectioncore.info.region:§c{<priority>}§b<name>§e[§f<minx>§e,§f<miny>§e,§f<minz>§e] - [§f<maxx>§e,§f<maxy>§e,§f<maxz>§e] §fregion:\n<groups>
+protectioncore.list:§eРегионы в этом мире: §f<regions>
+protectioncore.list.separator:, 
+protectioncore.noperm:§cУ вас нет прав на использование protectioncore!
+protectioncore.noperm.area:§cУ вас нет прав на изменение области регионов.
+protectioncore.noperm.define:§cУ вас нет прав на создание новых регионов.
+protectioncore.noperm.flag:§cУ вас нет прав на использование флагов!
+protectioncore.noperm.flagremove:§cУ вас нет прав на удаление флагов!
+protectioncore.noperm.gettool:§cУ вас нет прав на получение инструмента для выделения области региона!
+protectioncore.noperm.group:§cУ вас нет прав на использование групп регионов!
+protectioncore.noperm.info:§cУ вас нет прав на просмотр информации о регионах!
+protectioncore.noperm.list:§cУ вас нет прав на просмотр списка регионов!
+protectioncore.noperm.player:§cУ вас нет прав на управление игроками в регионах!
+protectioncore.noperm.priority:§cУ вас нет прав на изменение приоритета регионов!
+protectioncore.noperm.reload:§cУ вас нет прав на перезагрузку плагина!
+protectioncore.noperm.remove:§cУ вас нет прав на удаление регионов!
+protectioncore.noperm.save:§cУ вас нет прав на сохранение регионов!
+protectioncore.noperm.select:§cУ вас нет прав на выделение регионов!
+protectioncore.player.add:§b<player>§f добавлен в регион §b<region>§f и группу §b<group>§f.
+protectioncore.player.remove:§b<player>§f удален из региона §b<region>§f и группы §b<group>§f.
+protectioncore.player.strange:§cСтранные группы не могут содержать игроков!
+protectioncore.priority.set:Приоритет региона (§b<region>§f) установлен на §b<priority>§f.
+protectioncore.region.exists:§e<region>§c регион уже существует.
+protectioncore.region.noargument:§cВы должны указать регион!
+protectioncore.region.notexists:§e<region>§c регион не существует.
+protectioncore.reload.error:§cОшибка при перезагрузке плагина, проверьте краши в консоли!
+protectioncore.reload.reloaded:§aПараметры всех регионов перезагружены.
+protectioncore.remove.noglobal:§cНельзя удалить глобальный регион!
+protectioncore.remove.removed:§b<region>§f регион успешно удален.
+protectioncore.save.error:§cОшибка при сохранении, проверьте краши в консоли!
+protectioncore.save.saved:§aРегионы успешно сохранены.
+protectioncore.selection.first:§bПервая точка выбрана (§f<x>,<y>,<z>§b).
+protectioncore.selection.noboth:§cВы не отметили область!
+protectioncore.selection.nofirst:§cВы не отметили первую точку!
+protectioncore.selection.nosecond:§cВы не отметили вторую точку!
+protectioncore.selection.second:§bВторая точка выбрана (§f<x>,<y>,<z>§b).
+protectioncore.tooltype.info: info
+protectioncore.tooltype.wand: wand
+protectioncore.warning.attackentity:§4Вы не можете нападать здесь на эту сущность!
+protectioncore.warning.blockbreak:§4Вы не можете ломать блоки здесь!
+protectioncore.warning.blockinterract:§4Вы не можете здесь взаимодействовать с блоками!
+protectioncore.warning.bookchange:§4Вы не можете здесь изменять книги!
+protectioncore.warning.chatsend:§4Вы не можете здесь писать в чат!
+protectioncore.warning.croptrample:§4Вы не можете топтать огород здесь!
+protectioncore.warning.dimensionchange:§4Отправляться в другой мир отсюда запрещено для вас!
+protectioncore.warning.editflags:§4Вы не можете редактировать этот флаг здесь!
+protectioncore.warning.entry:§4Вы не можете сюда входить!
+protectioncore.warning.exppickup:§4Вы не можете подбирать опыт здесь!
+protectioncore.warning.getpotioneffects:§4Вы не можете получать эффекты от зелий здесь!
+protectioncore.warning.interractentity:§4Вы не можете взаимодействовать с предметами здесь!
+protectioncore.warning.itemdrops:§4Вы не можете выбрасывать вещи здесь!
+protectioncore.warning.itempickup:§4Вы не можете подбирать вещи здесь!
+protectioncore.warning.itemuse:§4Вы не можете использовать вещи здесь!
+protectioncore.warning.leave:§4Вы не можете выходить отсюда!
+protectioncore.warning.move:§4Вы не можете залетать сюда!
+protectioncore.warning.nopvp:§4Вы не можете драться здесь!
+protectioncore.warning.signchange:§4Вы не можете редактировать таблички здесь!
+protectioncore.warning.teleport:§4Вы не можете телепортироваться здесь!

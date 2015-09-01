@@ -1,0 +1,201 @@
+admin:
+  permission: protectioncore.regiontype.admin
+  area: 0 0 0 2147483648 2147483648 2147483648
+  flags:
+    strange:
+      ManageRegion: -
+      PlayerDamage: +
+      ItemDrop: +
+      AttackEntity: +
+      Entry: +
+      BlockInterract: -
+      BlockPlace: -
+      EntityGrief: -villager_plant_seeds villager_harvest
+      ItemDrop: -
+      ItemUse: -
+      ItemPickup: -
+      PVP: -
+      InterractEntity: -
+      EditFlags: -
+      SignChange: -
+      BlockBreak: -
+      CropTrample: -
+  groups: strange owner member
+  priority: 0
+player:
+  permission: protectioncore.regiontype.player
+  area: 5 5 5 30 20 30
+  flags:
+    strange:
+      CreationBlock: -14:0 14:0-5-5-5 16 16-10-5-10
+      ManageRegion: -
+      PlayerDamage: -
+      ItemDrop: -
+      AttackEntity: -
+      Entry: +
+      BlockInterract: -
+      BlockPlace: -
+      ItemDrop: -
+      ItemUse: +
+      ItemPickup: -
+      InterractEntity: -
+      EditFlags: -
+      EntityGrief: -villager_plant_seeds villager_harvest
+      SignChange: -
+      BlockBreak: -
+      CropTrample: -
+    member:
+      ManageRegion: -
+      PlayerDamage: +
+      ItemDrop: +
+      AttackEntity: +
+      Entry: +
+      BlockInterract: +
+      BlockPlace: +
+      ItemDrop: -
+      ItemUse: +
+      ItemPickup: -
+      InterractEntity: +
+      EditFlags: -
+      SignChange: +
+      BlockBreak: +
+      CropTrample: +
+    owner:
+      ManageRegion: +priority
+      PlayerDamage: +
+      ItemDrop: +
+      AttackEntity: +
+      Entry: +
+      BlockInterract: +
+      BlockPlace: +
+      ItemDrop: +
+      ItemUse: +
+      ItemPickup: +
+      InterractEntity: +
+      EditFlags: -PlayerDamage ItemDrop AttackEntity Entry BlockInterract BlockPlace InterractEntity SignChange BlockBreak Greeting Farewell
+      SignChange: +
+      BlockBreak: +
+      CropTrample: +
+  players:
+    member: 
+    owner: <creator>
+  groups: strange owner member
+  priority: -100
+{global}:
+  flags:
+    strange:
+      BlockPlace: +
+      SpectateEntity: +
+      ManageRegion: -
+      GetPotionEffects: +
+      Teleport: +
+      PlayerDamage: +
+      PotionEffects: +
+      PistonAction: +
+      DimensionChange: +
+      ItemDrop: +
+      ItemPickup: +
+      ItemUse: +
+      ExpPickup: +
+      AttackEntity: +
+      Permissions: +
+      Entry: +
+      Move: +
+      Fly: -
+      ChatSend: +
+      BlockInterract: +
+      Commands: +
+      EntityDamage: +
+      Greeting: 
+      InterractEntity: +
+      EntitySpawn: +
+      BlockFlow: +
+      PVP: +
+      GameMode: 
+      EditFlags: -
+      EntityGrief: +
+      SignChange: +
+      BlockBreak: +
+      Explosion: +
+      ChatReceive: +
+      CropTrample: +
+      Farewell: 
+      Leave: +  
+    member:
+      BlockPlace: +
+      SpectateEntity: +
+      ManageRegion: -
+      GetPotionEffects: +
+      Teleport: +
+      PlayerDamage: +
+      PotionEffects: +
+      PistonAction: +
+      DimensionChange: +
+      ItemDrop: +
+      ItemPickup: +
+      ItemUse: +
+      ExpPickup: +
+      AttackEntity: +
+      Permissions: +
+      Entry: +
+      Move: +
+      Fly: -
+      ChatSend: +
+      BlockInterract: +
+      Commands: +
+      EntityDamage: +
+      Greeting: 
+      InterractEntity: +
+      EntitySpawn: +
+      BlockFlow: +
+      PVP: +
+      GameMode: 
+      EditFlags: -
+      EntityGrief: +
+      SignChange: +
+      BlockBreak: +
+      Explosion: +
+      ChatReceive: +
+      CropTrample: +
+      Farewell: 
+      Leave: +
+    owner:
+      BlockPlace: +
+      SpectateEntity: +
+      ManageRegion: +
+      GetPotionEffects: +
+      Teleport: +
+      PlayerDamage: +
+      PotionEffects: +
+      PistonAction: +
+      DimensionChange: +
+      ItemDrop: +
+      ItemPickup: +
+      ItemUse: +
+      ExpPickup: +
+      AttackEntity: +
+      Permissions: +
+      Entry: +
+      Move: +
+      Fly: -
+      ChatSend: +
+      BlockInterract: +
+      Commands: +
+      EntityDamage: +
+      Greeting: 
+      InterractEntity: +
+      EntitySpawn: +
+      BlockFlow: +
+      PVP: +
+      GameMode: 
+      EditFlags: -
+      EntityGrief: +
+      SignChange: +
+      BlockBreak: +
+      Explosion: +
+      ChatReceive: +
+      CropTrample: +
+      Farewell: 
+      Leave: +
+  groups: strange owner member
+  priority: -2147483648
